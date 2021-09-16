@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/solid";
 import { useRouter } from "next/dist/client/router";
 
-function Header() {
+function Header({ placeholder }) {
 	const [searchInput, setSearchInput] = useState("");
 	const [startDate, setStartDate] = useState(new Date());
 	const [endDate, setEndDate] = useState(new Date());
@@ -66,7 +66,7 @@ function Header() {
 					onChange={(e) => setSearchInput(e.target.value)}
 					className="pl-5 bg-transparent outline-none flex-grow text-sm text-gray-600 placeholder-gray-400"
 					type="text"
-					placeholder="Start Your Search"
+					placeholder={placeholder || "Start Your Search"}
 				/>
 				<SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
 			</div>

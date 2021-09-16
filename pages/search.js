@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function Search() {
+function Search({ searchResults }) {
 	const router = useRouter();
 	const { location, startDate, endDate, noOfGuests } = router.query;
 
@@ -42,3 +42,15 @@ function Search() {
 }
 
 export default Search;
+
+export async function getServerSideProps() {
+	const searchResults = await fetch("https://links.papareact.com/isz").then(
+		(res) => res.json()
+	);
+
+	return {
+		props: {
+			searchResults,
+		},
+	};
+}

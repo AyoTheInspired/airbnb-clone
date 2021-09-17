@@ -19,3 +19,6 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+// pk.eyJ1IjoidGhlaW5zcGlyZWQiLCJhIjoiY2t0bm0wbDFqMDQyYzJvbDR4YnV5ZnA1eiJ9
+// 	.IZe0o30IZ2Jd24xoaTOqKg;

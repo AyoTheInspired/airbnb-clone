@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function Search({ searchResults }) {
 	const router = useRouter();
@@ -20,11 +21,11 @@ function Search({ searchResults }) {
 			<main className="flex">
 				<section className="flex-grow pt-14 px-6">
 					<p className="text-xs">
-						300+ Stays - {range} - for {noOfGuests} Guests
+						300+ Lodges - {range} - for {noOfGuests} Guests
 					</p>
 
 					<h1 className="text-3xl font-semibold mt-2 mb-6">
-						Stays in {location}
+						Lodges in {location}
 					</h1>
 
 					<div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
@@ -51,6 +52,12 @@ function Search({ searchResults }) {
 							)
 						)}
 					</div>
+				</section>
+
+				<section className="sm:inline-flex sm:min-w-[400px]">
+					{/* the map is here */}
+					{/* <h2 className="bg-red-500 h-200 2-800">THE MAP IS HERE</h2> */}
+					<Map />
 				</section>
 			</main>
 

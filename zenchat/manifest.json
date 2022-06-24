@@ -1,0 +1,23 @@
+{
+	"name": "ZenChatApp",
+	"author": {
+		"name": "ayo",
+		"email": "abimbola.ayodeji@blinqpay.io",
+		"url": ""
+	},
+	"defaultLocale": "en",
+	"private": true,
+	"location": {
+		"chat": {
+			"chat_sidebar": "assets/iframe.html"
+		},
+		"support": {
+			"ticket_sidebar": {
+				"url": "assets/iframe.html",
+				"flexible": true
+			}
+		}
+	},
+	"version": "1.0.0",
+	"frameworkVersion": "2.0"
+}

@@ -6,12 +6,17 @@ import LargeCard from "../components/LargeCard";
 import MediumCards from "../components/MediumCards";
 import SmallCard from "../components/SmallCard";
 
+// tEMOgP7YcxstvMfRJI8s9c9piAM7eYwmCpxwtIMDy15A9EBD
+
 export default function Home({ exploreData, cardsData }) {
 	return (
 		<div className="">
 			<Head>
 				<title>AirBnb</title>
 				<link rel="icon" href="/favicon.ico" />
+				<script
+					id="ze-snippet"
+					src="https://static.zdassets.com/ekr/snippet.js?key=eb46e8fa-d883-4b01-a8a3-b0fdd59e9592"></script>
 			</Head>
 
 			<Header />
